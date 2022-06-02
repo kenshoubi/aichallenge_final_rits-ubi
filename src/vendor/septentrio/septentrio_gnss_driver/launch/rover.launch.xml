@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <arg name="param_file_name" />
+
+  <node pkg="septentrio_gnss_driver" exec="septentrio_gnss_driver_node" name="septentrio_gnss" output="screen">
+    <param from="$(find-pkg-share septentrio_gnss_driver)/config/$(var param_file_name)" />
+  </node>
+</launch>

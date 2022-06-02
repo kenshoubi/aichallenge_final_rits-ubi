@@ -1,0 +1,48 @@
+name: build
+
+on:
+  schedule:
+    - cron: 0 0 * * 0
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ubuntu:20.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      # TODO: Install this in the script and remove this
+      - name: Install dependencies for the setup script
+        run: |
+          apt-get -y update
+          apt-get -y install sudo git
+          touch ~/.bashrc
+          mkdir src
+
+      - name: Run setup script
+        run: |
+          ./setup_ubuntu20.04.sh -c
+
+      - name: Set git config for private repositories
+        run: |
+          git config --local --unset-all http.https://github.com/.extraheader || true
+          git config --global url.https://x-access-token:${{ secrets.REPO_TOKEN }}@github.com/.insteadOf 'https://github.com/'
+          git config --global url.https://x-access-token:${{ secrets.REPO_TOKEN }}@github.com/.insteadOf 'git@github.com:'
+
+      - name: Run vcs import
+        run: |
+          mkdir -p src
+          vcs import src < autoware.proj.repos
+
+      - name: Run rosdep install
+        run: |
+          sudo apt-get -y update
+          rosdep update
+          DEBIAN_FRONTEND=noninteractive rosdep install -y --from-paths src --ignore-src --rosdistro galactic
+
+      - name: Build
+        run: |
+          . /opt/ros/galactic/setup.sh
+          colcon build --event-handlers console_cohesion+ --cmake-args -DCMAKE_BUILD_TYPE=Release

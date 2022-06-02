@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <node pkg="septentrio_gnss_driver" exec="septentrio_gnss_driver_node" name="septentrio_gnss">
+    <remap from="gpgga" to="septentrio/gpgga" />
+    <remap from="gprmc" to="septentrio/gprmc" />
+    <remap from="gpgsa" to="septentrio/gpgsa" />
+    <remap from="gpgsv" to="septentrio/gpgsv" />
+    <remap from="pvtcartesian" to="septentrio/pvtcartesian" />
+    <remap from="pvtgeodetic" to="septentrio/pvtgeodetic" />
+    <remap from="poscovcartesian" to="septentrio/poscovcartesian" />
+    <remap from="poscovgeodetic" to="septentrio/poscovgeodetic" />
+    <remap from="atteuler" to="septentrio/atteuler" />
+    <remap from="attcoveuler" to="septentrio/attcoveuler" />
+    <remap from="gpst" to="septentrio/gpst" />
+    <remap from="navsatfix" to="septentrio/nav_sat_fix" />
+    <remap from="gpsfix" to="septentrio/gpsfix" />
+    <remap from="pose" to="septentrio/pose" />
+    <remap from="diagnostics" to="septentrio/diagnostics" />
+    <param from="$(find-pkg-share septentrio_gnss_driver)/config/mosaic_x5_rover.param.yaml" />
+  </node>
+</launch>

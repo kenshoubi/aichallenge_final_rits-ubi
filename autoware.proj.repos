@@ -1,0 +1,147 @@
+repositories:
+  # autoware
+  autoware/universe:
+    type: git
+    url: https://github.com/tier4/autoware.universe.git
+    version: cc39553aec1ce42206448249fac4bfdb9a68f96c
+  autoware/common:
+    type: git
+    url: https://github.com/autowarefoundation/autoware_common.git
+    version: 91f9b1c4d4cfffd0fce6c130fbf7112eccbb3cbe
+  autoware/launcher:
+    type: git
+    url: git@github.com:tier4/autoware_launcher.test.x1.aichallenge.git
+    version: aic-test-kashiwanoha
+  autoware/aip_launcher:
+    type: git
+    url: git@github.com:tier4/aip_launcher.test.x1.aichallenge.git
+    version: feature/aip_aichallenge
+  autoware/ad_api_adaptor:
+    type: git
+    url: https://github.com/tier4/tier4_ad_api_adaptor.git
+    version: d622332a21fe332c5381e30f74149b3117968cb2
+  autoware/tier4_autoware_msgs:
+    type: git
+    url: https://github.com/tier4/tier4_autoware_msgs.git
+    version: 6e6a8d5b2066791f7b0bc8c12e65ee0d72e2f04b
+  autoware/auto_msgs:
+    type: git
+    url: https://github.com/tier4/autoware_auto_msgs.git
+    version: c8a5d2001da052137c08cdf9e8d75c1975f99b84
+  autoware/individual_params:
+    type: git
+    url: git@github.com:tier4/autoware_individual_params.aichallenge.git
+    version: feature/ymc_golfcart
+  autoware/calibration_tools:
+    type: git
+    url: git@github.com:tier4/calibration_tools.git
+    version: e4fb67715f71dfb56bdb9dc1202a1aab010be453
+  # description
+  description/sensor/sensor_component_description:
+    type: git
+    url: https://github.com/tier4/sensor_description.iv.git
+    version: ca3db56426c80f579a79c2c310c2ef59e93e76c2
+  description/sensor/aip_description:
+    type: git
+    url: git@github.com:tier4/aip_customized_description.aichallenge.git
+    version: feature/aip_aichallenge
+  description/vehicle/lexus_description:
+    type: git
+    url: https://github.com/tier4/lexus_description.iv.git
+    version: 9c6d7fcd9b8dfac6623e82bd826eb9f25a309a64
+  description/vehicle/ymc_golfcart_description:
+    type: git
+    url: git@github.com:tier4/ymc_golfcart_description.iv.git
+    version: aic-test-kashiwanoha
+  # vendor
+  # After https://github.com/ANYbotics/grid_map/pull/323 is merged, use upstream.
+  vendor/grid_map:
+    type: git
+    url: https://github.com/tier4/grid_map.git
+    version: 657cc055eb90a042057738a85a5651c03e42b1bb
+  vendor/topic_tools:
+    type: git
+    url: https://github.com/tier4/topic_tools.git
+    version: ac3af3357f009925d29c8979f7613bcf111e58c4
+  vendor/pacmod_interface:
+    type: git
+    url: https://github.com/tier4/pacmod_interface.git
+    version: main
+  vendor/usb_cam: # TODO remove after https://github.com/ros-drivers/usb_cam/pull/132 is available in foxy
+    type: git
+    url: https://github.com/tier4/usb_cam.git
+    version: 8fe48128c04198ca7090a8a8502c1ec058381ce7
+  vendor/tamagawa_imu_driver:
+    type: git
+    url: https://github.com/tier4/tamagawa_imu_driver.git
+    version: fd169e3b9f14adde42fc2ed7e437af80e68261ef
+  vendor/ublox:
+    type: git
+    url: https://github.com/tier4/ublox.git
+    version: ba21bbbad702e99074f706a7b868db79968e1dfd
+  vendor/septentrio:
+    type: git
+    url: https://github.com/tier4/septentrio_gnss_driver.git
+    version: d6da33824df8cf5d00cd7762fbe27e8dd5566500
+  vendor/livox-driver:
+    type: git
+    url: https://github.com/tier4/livox_ros2_driver.git
+    version: ef18bb868d92db70b541c21d188961ee6bcac024
+  vendor/lidar-driver:
+    type: git
+    url: git@github.com:tier4/lidar_driver.git
+    version: v0.1.4
+  vendor/rosbridge_suite:
+    type: git
+    url: https://github.com/tier4/rosbridge_suite.git
+    version: 0ee05e529aef88bf2654b77ddd5ccd7b6fe2ee6b
+  vendor/rosauth:
+    type: git
+    url: https://github.com/GT-RAIL/rosauth.git
+    version: 3ca66938fb604c0d2f948f356ce7a1b9bdfb717e
+  vendor/velodyne_vls:
+    type: git
+    url: https://github.com/tier4/velodyne_vls.git
+    version: d58b78436d2e2bd4f7421974d3e72b1498e577ea
+  vendor/operational-design-domains:
+    type: git
+    url: https://gitlab.com/autowarefoundation/operational-design-domains
+    version: 42321f9a04fcaef9caf3694530e1c63d3e27c47a
+  vendor/ndt_omp:
+    type: git
+    url: https://github.com/tier4/ndt_omp.git
+    version: 7fa5fa727ea2b999da925d6ab7dfa1298af521e4
+  vendor/mussp:
+    type: git
+    url: https://github.com/tier4/muSSP.git
+    version: c79e98fd5e658f4f90c06d93472faa977bc873b9
+  vendor/pointcloud_to_laserscan:
+    type: git
+    url: https://github.com/tier4/pointcloud_to_laserscan.git
+    version: 8057177eeb26a3fd29b6e363e8a9a90d5daf391b
+  vendor/ars408_driver:
+    type: git
+    url: https://github.com/tier4/ars408_driver.git
+    version: use-autoware-auto-msgs
+  vendor/diagnostics:
+    type: git
+    url: https://github.com/tier4/diagnostics.git
+    version: da6cdbe674dd7bf1e71ee6fb73825e3e43644f0c
+  vendor/spinnaker:
+    type: git
+    url: https://github.com/tier4/spinnaker.git
+    version: 4c74d319ef9186a4fb643dbd82e1b5f7918e75ea
+  vendor/image_pipeline:
+    type: git
+    url: https://github.com/tier4/image_pipeline.git
+    version: 47964112293eb19f9f57254b2e6b68706954cc63
+  # removed by galactic sync at 2022/03/14
+  vendor/plotjuggler_ros:
+    type: git
+    url: https://github.com/PlotJuggler/plotjuggler-ros-plugins.git
+    version: galactic
+  # map 
+  ../map:
+    type: git
+    url: git@github.com:tier4/ai-challenge-map.git
+    version: main

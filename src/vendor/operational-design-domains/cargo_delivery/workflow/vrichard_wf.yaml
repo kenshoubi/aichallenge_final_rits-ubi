@@ -1,0 +1,5 @@
+Scenario:
+  - { path: $(find-pkg-share cargo_delivery)/scenarios/UC-005-0001-Kashiwa_with_private_area.yaml }
+  - { path: $(find-pkg-share cargo_delivery)/scenarios/UC-005-0002-Kashiwa_with_private_area.yaml }
+  - { path: $(find-pkg-share cargo_delivery)/scenarios/UC-005-0004-Kashiwa_with_private_area.yaml }
+  - { path: $(find-pkg-share cargo_delivery)/scenarios/UC-005-0005-Kashiwa_with_private_area.yaml }
