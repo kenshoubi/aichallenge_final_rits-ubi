@@ -28,7 +28,7 @@
     default="false"
     description="if use_empty_dynamic_object_publisher:=true, /perception/object_recognition/objects topic has an empty DynamicObjectArray"
   />
-  <arg name="use_pointcloud_container" default="false" description="launch pointcloud container"/>
+  <arg name="use_pointcloud_container" default="true" description="launch pointcloud container"/>
   <arg name="pointcloud_container_name" default="pointcloud_container"/>
 
   <!-- perception module -->
@@ -104,13 +104,14 @@
         </include>
       </group>
     </group>
-
+  
     <group if="$(var use_empty_dynamic_object_publisher)">
       <push-ros-namespace namespace="object_recognition"/>
       <node pkg="dummy_perception_publisher" exec="empty_objects_publisher" name="empty_objects_publisher" output="screen">
         <remap from="~/output/objects" to="/perception/object_recognition/objects"/>
       </node>
     </group>
+  
 
     <!-- traffic light module -->
     <group>

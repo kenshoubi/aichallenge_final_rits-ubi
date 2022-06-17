@@ -10,7 +10,7 @@
       enable_avoidance_over_same_direction: true
       enable_avoidance_over_opposite_direction: true
 
-      threshold_distance_object_is_on_center: 1.0 # [m]
+      threshold_distance_object_is_on_center: -1.0 # [m]  1.0 default
       threshold_speed_object_is_stopped: 1.0      # [m/s]
       object_check_forward_distance: 150.0        # [m]
       object_check_backward_distance: 2.0         # [m]
@@ -55,7 +55,7 @@
         unknown: false
         bicycle: false
         motorcycle: false
-        pedestrian: false
+        pedestrian: true
 
       # ---------- advanced parameters ----------
       avoidance_execution_lateral_threshold: 0.499

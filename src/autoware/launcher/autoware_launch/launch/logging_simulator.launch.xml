@@ -8,14 +8,16 @@
   <arg name="vehicle_id" default="$(env VEHICLE_ID default)" description="vehicle specific ID"/>
 
   <!-- Optional parameters -->
-  <arg name="vehicle" default="true" description="launch vehicle" />
-  <arg name="system" default="true" description="launch system" />
+  <arg name="vehicle" default="false" description="launch vehicle" />
+  <arg name="system" default="false" description="launch system" />
   <arg name="map" default="true" description="launch map" />
-  <arg name="sensing" default="true" description="launch sensing" />
-  <arg name="localization" default="true" description="launch localization" />
+
+  <arg name="sensing" default="false" description="launch sensing" />
+  <arg name="localization" default="false" description="launch localization" />
   <arg name="perception" default="true" description="launch perception" />
-  <arg name="planning" default="true" description="launch planning" />
-  <arg name="control" default="true" description="launch control" />
+  <arg name="planning" default="false" description="launch planning" />
+  <arg name="control" default="false" description="launch control" />
+
   <arg name="rviz" default="true" description="launch rviz" />
   <arg name="lanelet2_map_file" default="lanelet2_map.osm" description="lanelet2 map file name"/>
   <arg name="pointcloud_map_file" default="pointcloud_map.pcd" description="pointcloud map file name"/>
