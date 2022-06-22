@@ -8,12 +8,14 @@ Panels:
         - /Sensing1/LiDAR1/ConcatenatePointCloud1/Topic1
         - /Sensing1/LiDAR1/ConcatenatePointCloud1/Autocompute Value Bounds1
         - /Perception1
+        - /Perception1/ObjectRecognition1
       Splitter Ratio: 0.557669460773468
-    Tree Height: 162
+    Tree Height: 345
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Tool Properties
-    Expanded: ~
+    Expanded:
+      - /2D Dummy Car1
     Name: Tool Properties
     Splitter Ratio: 0.5886790156364441
   - Class: rviz_common/Views
@@ -45,7 +47,8 @@ Visualization Manager:
           Show Arrows: true
           Show Axes: true
           Show Names: true
-          Tree: {}
+          Tree:
+            {}
           Update Interval: 0
           Value: false
         - Alpha: 0.5
@@ -136,25 +139,6 @@ Visualization Manager:
                 Expand Link Details: false
                 Expand Tree: false
                 Link Tree Style: Links in Alphabetic Order
-                base_link:
-                  Alpha: 1
-                  Show Axes: false
-                  Show Trail: false
-                  Value: true
-                sensor_kit_base_link:
-                  Alpha: 1
-                  Show Axes: false
-                  Show Trail: false
-                velodyne_top:
-                  Alpha: 1
-                  Show Axes: false
-                  Show Trail: false
-                  Value: true
-                velodyne_top_base_link:
-                  Alpha: 1
-                  Show Axes: false
-                  Show Trail: false
-                  Value: true
               Name: VehicleModel
               TF Prefix: ""
               Update Interval: 0
@@ -481,7 +465,8 @@ Visualization Manager:
             - Class: rviz_default_plugins/MarkerArray
               Enabled: true
               Name: MonteCarloInitialPose
-              Namespaces: {}
+              Namespaces:
+                {}
               Topic:
                 Depth: 5
                 Durability Policy: Volatile
@@ -581,7 +566,8 @@ Visualization Manager:
                     Alpha: 0.9990000128746033
                     Color: 119; 11; 32
                   Name: DetectedObjects
-                  Namespaces: {}
+                  Namespaces:
+                    {}
                   PEDESTRIAN:
                     Alpha: 0.9990000128746033
                     Color: 255; 192; 203
@@ -601,7 +587,7 @@ Visualization Manager:
                     Alpha: 0.9990000128746033
                     Color: 255; 255; 255
                   Value: true
-              Enabled: false
+              Enabled: true
               Name: Detection
             - Class: rviz_common/Group
               Displays:
@@ -628,7 +614,8 @@ Visualization Manager:
                     Alpha: 0.9990000128746033
                     Color: 119; 11; 32
                   Name: TrackedObjects
-                  Namespaces: {}
+                  Namespaces:
+                    {}
                   PEDESTRIAN:
                     Alpha: 0.9990000128746033
                     Color: 255; 192; 203
@@ -648,7 +635,7 @@ Visualization Manager:
                     Alpha: 0.9990000128746033
                     Color: 255; 255; 255
                   Value: true
-              Enabled: false
+              Enabled: true
               Name: Tracking
             - Class: rviz_common/Group
               Displays:
@@ -675,7 +662,8 @@ Visualization Manager:
                     Alpha: 0.9990000128746033
                     Color: 119; 11; 32
                   Name: PredictedObjects
-                  Namespaces: {}
+                  Namespaces:
+                    {}
                   PEDESTRIAN:
                     Alpha: 0.9990000128746033
                     Color: 255; 192; 203
@@ -734,10 +722,7 @@ Visualization Manager:
               Enabled: true
               Name: RouteArea
               Namespaces:
-                goal_lanelets: true
-                left_lane_bound: true
-                right_lane_bound: true
-                route_lanelets: true
+                {}
               Topic:
                 Depth: 5
                 Durability Policy: Transient Local
@@ -827,7 +812,8 @@ Visualization Manager:
                     - Class: rviz_default_plugins/MarkerArray
                       Enabled: false
                       Name: Arrow
-                      Namespaces: {}
+                      Namespaces:
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -839,8 +825,7 @@ Visualization Manager:
                       Enabled: true
                       Name: Crosswalk
                       Namespaces:
-                        slow polygon line: true
-                        stop polygon line: true
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -852,11 +837,7 @@ Visualization Manager:
                       Enabled: true
                       Name: Intersection
                       Namespaces:
-                        candidate_collision_ego_lane_polygon: true
-                        detection_area: true
-                        ego_lane: true
-                        path_raw: true
-                        stuck_vehicle_detect_area: true
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -867,7 +848,8 @@ Visualization Manager:
                     - Class: rviz_default_plugins/MarkerArray
                       Enabled: true
                       Name: MergeFromPrivate
-                      Namespaces: {}
+                      Namespaces:
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -879,10 +861,7 @@ Visualization Manager:
                       Enabled: true
                       Name: Blind Spot
                       Namespaces:
-                        conflict_area_for_blind_spot: true
-                        detection_area_for_blind_spot: true
-                        path_raw: true
-                        spline: true
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -893,7 +872,8 @@ Visualization Manager:
                     - Class: rviz_default_plugins/MarkerArray
                       Enabled: true
                       Name: TrafficLight
-                      Namespaces: {}
+                      Namespaces:
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -904,7 +884,8 @@ Visualization Manager:
                     - Class: rviz_default_plugins/MarkerArray
                       Enabled: true
                       Name: VirtualTrafficLight
-                      Namespaces: {}
+                      Namespaces:
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -915,7 +896,8 @@ Visualization Manager:
                     - Class: rviz_default_plugins/MarkerArray
                       Enabled: true
                       Name: StopLine
-                      Namespaces: {}
+                      Namespaces:
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -926,7 +908,8 @@ Visualization Manager:
                     - Class: rviz_default_plugins/MarkerArray
                       Enabled: true
                       Name: DetectionArea
-                      Namespaces: {}
+                      Namespaces:
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -938,7 +921,7 @@ Visualization Manager:
                       Enabled: true
                       Name: OcclusionSpot
                       Namespaces:
-                        detection_area: true
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -949,7 +932,8 @@ Visualization Manager:
                     - Class: rviz_default_plugins/MarkerArray
                       Enabled: true
                       Name: NoStoppingArea
-                      Namespaces: {}
+                      Namespaces:
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -1016,7 +1000,7 @@ Visualization Manager:
                       Enabled: true
                       Name: ObstacleStop
                       Namespaces:
-                        detection_polygons: true
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -1027,7 +1011,8 @@ Visualization Manager:
                     - Class: rviz_default_plugins/MarkerArray
                       Enabled: true
                       Name: SurroundObstacleCheck
-                      Namespaces: {}
+                      Namespaces:
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -1039,14 +1024,7 @@ Visualization Manager:
                       Enabled: true
                       Name: ObstacleAvoidance
                       Namespaces:
-                        base_bounds_0: true
-                        base_bounds_1: true
-                        base_bounds_2: true
-                        current_vehicle_circles: true
-                        lateral_errors: true
-                        mpt_footprints: true
-                        vehicle_circle_lines: true
-                        vehicle_circles: true
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -1057,7 +1035,8 @@ Visualization Manager:
                     - Class: rviz_default_plugins/MarkerArray
                       Enabled: true
                       Name: ObstacleAvoidanceWall
-                      Namespaces: {}
+                      Namespaces:
+                        {}
                       Topic:
                         Depth: 5
                         Durability Policy: Volatile
@@ -1172,7 +1151,8 @@ Visualization Manager:
         - Class: rviz_default_plugins/MarkerArray
           Enabled: false
           Name: Debug/MPC
-          Namespaces: {}
+          Namespaces:
+            {}
           Topic:
             Depth: 5
             Durability Policy: Volatile
@@ -1183,7 +1163,8 @@ Visualization Manager:
         - Class: rviz_default_plugins/MarkerArray
           Enabled: false
           Name: Debug/PurePursuit
-          Namespaces: {}
+          Namespaces:
+            {}
           Topic:
             Depth: 5
             Durability Policy: Volatile
@@ -1239,7 +1220,7 @@ Visualization Manager:
       Pose Topic: /simulation/dummy_perception_publisher/object_info
       Target Frame: <Fixed Frame>
       Theta std deviation: 0.0872664600610733
-      Velocity: 3
+      Velocity: 0
       X std deviation: 0.029999999329447746
       Y std deviation: 0.029999999329447746
       Z position: 0
@@ -1268,11 +1249,11 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 15.039742469787598
+      Scale: 8.889387130737305
       Target Frame: viewer
       Value: TopDownOrtho (rviz_default_plugins)
-      X: 46.47853469848633
-      Y: -43.7734375
+      X: 19.885517120361328
+      Y: 5.192828178405762
     Saved:
       - Class: rviz_default_plugins/ThirdPersonFollower
         Distance: 18
@@ -1319,7 +1300,7 @@ Window Geometry:
   Hide Right Dock: false
   InitialPoseButtonPanel:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000032900000342fc020000000efb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b00000109000000c700fffffffc0000014a00000151000000bb0100001afa000000000100000002fb0000000a0056006900650077007301000000000000033c0000010000fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000000ffffffff0000008f00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000c00430061006d0065007200610100000682000000eb0000000000000000fb0000000a0049006d0061006700650100000505000002680000000000000000fb0000002c0049006e0069007400690061006c0050006f007300650042007500740074006f006e00500061006e0065006c000000068f000000de0000007100fffffffb0000002c0049006e0069007400690061006c0050006f007300650042007500740074006f006e00500061006e0065006c000000068f000000de0000000000000000fb00000030005200650063006f0067006e006900740069006f006e0052006500730075006c0074004f006e0049006d0061006700650100000248000000740000000000000000fb00000024004100750074006f00770061007200650053007400610074006500500061006e0065006c01000002a1000000dc000000a800ffffff000000010000015f000006fffc0200000002fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000e7a0000005afc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007380000005afc0100000002fb0000000800540069006d00650100000000000007380000024400fffffffb0000000800540069006d00650100000000000004500000000000000000000004090000034200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000003290000033efc020000000efb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d00000196000000c900fffffffc000001d9000000c1000000c10100001cfa000000010100000002fb0000000a0056006900650077007301000000000000033c0000010000fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000000ffffffff0000009d00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000c00430061006d0065007200610100000682000000eb0000000000000000fb0000000a0049006d0061006700650100000505000002680000000000000000fb0000002c0049006e0069007400690061006c0050006f007300650042007500740074006f006e00500061006e0065006c000000068f000000de0000007700fffffffb0000002c0049006e0069007400690061006c0050006f007300650042007500740074006f006e00500061006e0065006c000000068f000000de0000000000000000fb00000030005200650063006f0067006e006900740069006f006e0052006500730075006c0074004f006e0049006d0061006700650100000248000000740000000000000000fb00000024004100750074006f00770061007200650053007400610074006500500061006e0065006c01000002a0000000db000000b400ffffff000000010000015f000006fffc0200000002fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000e7a0000005afc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007380000005afc0100000002fb0000000800540069006d0065010000000000000738000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000004090000033e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:

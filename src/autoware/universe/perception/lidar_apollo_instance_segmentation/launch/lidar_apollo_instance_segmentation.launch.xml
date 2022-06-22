@@ -1,6 +1,6 @@
 <launch>
   <arg name="input/pointcloud" default="/sensing/lidar/pointcloud"/>
-  <arg name="model" default="model_128"/>
+  <arg name="model" default="model_16"/>
   <arg name="output/objects" default="labeled_clusters"/>
 
   <arg if="$(eval &quot;'$(var model)'=='model_16'&quot;)" name="base_name" default="vlp-16"/>

@@ -20,6 +20,9 @@
   <exec_depend>ground_segmentation</exec_depend>
   <exec_depend>image_transport_decompressor</exec_depend>
   <exec_depend>lidar_apollo_instance_segmentation</exec_depend>
+
+  <exec_depend>lidar_centerpoint</exec_depend>
+
   <exec_depend>map_based_prediction</exec_depend>
   <exec_depend>multi_object_tracker</exec_depend>
   <exec_depend>object_merger</exec_depend>
@@ -30,6 +33,7 @@
   <exec_depend>roi_cluster_fusion</exec_depend>
   <exec_depend>shape_estimation</exec_depend>
   <exec_depend>tensorrt_yolo</exec_depend>
+
   <exec_depend>traffic_light_classifier</exec_depend>
   <exec_depend>traffic_light_map_based_detector</exec_depend>
   <exec_depend>traffic_light_ssd_fine_detector</exec_depend>

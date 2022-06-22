@@ -18,12 +18,12 @@
   <arg name="camera_info6" default="/camera_info6"/>
   <arg name="image_raw7" default="/image_raw7"/>
   <arg name="camera_info7" default="/camera_info7"/>
-  <arg name="image_number" default="1" description="choose image raw number(0-7)"/>
+  <arg name="image_number" default="0" description="choose image raw number(0-7)"/>
   <arg name="lidar_detection_model" default="centerpoint" description="options: `centerpoint`, `apollo`"/>
   <arg name="use_pointcloud_map" default="true" description="use pointcloud map in detection"/>
 
   <!-- Jetson AGX -->
-  <!-- <include file="$(find-pkg-share tensorrt_yolo)/launch/yolo.launch.xml">
+  <include file="$(find-pkg-share tensorrt_yolo)/launch/yolo.launch.xml">
     <arg name="image_raw0" value="$(var image_raw0)"/>
     <arg name="image_raw1" value="$(var image_raw1)"/>
     <arg name="image_raw2" value="$(var image_raw2)"/>
@@ -33,7 +33,7 @@
     <arg name="image_raw6" value="$(var image_raw6)"/>
     <arg name="image_raw7" value="$(var image_raw7)"/>
     <arg name="image_number" value="$(var image_number)"/>
-  </include> -->
+  </include> 
 
   <!-- Pointcloud map filter -->
   <group>

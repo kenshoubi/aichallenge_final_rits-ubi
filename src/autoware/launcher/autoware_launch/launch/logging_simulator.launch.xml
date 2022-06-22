@@ -15,7 +15,7 @@
   <arg name="sensing" default="false" description="launch sensing" />
   <arg name="localization" default="false" description="launch localization" />
   <arg name="perception" default="true" description="launch perception" />
-  <arg name="planning" default="false" description="launch planning" />
+  <arg name="planning" default="true" description="launch planning" />
   <arg name="control" default="false" description="launch control" />
 
   <arg name="rviz" default="true" description="launch rviz" />
