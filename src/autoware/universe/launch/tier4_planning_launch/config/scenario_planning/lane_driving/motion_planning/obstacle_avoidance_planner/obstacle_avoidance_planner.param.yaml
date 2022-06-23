@@ -50,7 +50,7 @@
         bus: true
         bicycle: true
         motorbike: true
-        pedestrian: true
+        pedestrian: false
         animal: true
 
     # mpt param

@@ -1,7 +1,7 @@
 /**:
   ros__parameters:
     # motion state constraints
-    max_velocity: 20.0      # max velocity limit [m/s]
+    max_velocity: 2.35      # max velocity limit [m/s]
 
     # external velocity limit parameter
     margin_to_insert_external_velocity_limit: 0.3   #  margin distance to insert external velocity limit [m]
@@ -20,7 +20,7 @@
     stop_dist_to_prohibit_engage: 0.5  # if the stop point is in this distance, the speed is set to 0 not to move the vehicle [m]
 
     # stop velocity
-    stopping_velocity: 2.778  # change target velocity to this value before v=0 point [m/s]
+    stopping_velocity: 1.38  # change target velocity to this value before v=0 point [m/s]
     stopping_distance: 0.0    # distance for the stopping_velocity [m]. 0 means the stopping velocity is not applied.
 
     # path extraction parameters

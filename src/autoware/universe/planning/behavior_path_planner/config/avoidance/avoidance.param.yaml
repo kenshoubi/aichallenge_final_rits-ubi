@@ -4,8 +4,8 @@
     avoidance:
       resample_interval_for_planning: 0.3
       resample_interval_for_output: 4.0
-      detection_area_right_expand_dist: 0.0
-      detection_area_left_expand_dist: 1.0
+      detection_area_right_expand_dist: 2.0
+      detection_area_left_expand_dist: 2.0
 
       enable_avoidance_over_same_direction: true
       enable_avoidance_over_opposite_direction: true
@@ -53,8 +53,8 @@
         bus: true
         trailer: true
         unknown: true
-        bicycle: false
-        motorcycle: false
+        bicycle: true
+        motorcycle: true
         pedestrian: false
 
       # ---------- advanced parameters ----------

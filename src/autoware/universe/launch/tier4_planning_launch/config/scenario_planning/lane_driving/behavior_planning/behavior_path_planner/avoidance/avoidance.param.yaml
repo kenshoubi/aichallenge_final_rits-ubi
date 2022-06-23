@@ -52,9 +52,9 @@
         truck: true
         bus: true
         trailer: true
-        unknown: false
-        bicycle: false
-        motorcycle: false
+        unknown: true
+        bicycle: true
+        motorcycle: true
         pedestrian: false
 
       # ---------- advanced parameters ----------
