@@ -108,6 +108,7 @@ Object UnknownInitialPoseTool::createObjectMsg() const
 
   // shape
   object.shape.type = Shape::POLYGON;
+  //object.shape.type = Shape::CYLINDER;
   const double width = 0.8;
   const double length = 0.8;
   object.shape.dimensions.x = length;

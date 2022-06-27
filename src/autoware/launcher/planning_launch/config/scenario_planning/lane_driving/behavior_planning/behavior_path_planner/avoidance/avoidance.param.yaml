@@ -4,13 +4,13 @@
     avoidance:
       resample_interval_for_planning: 0.3
       resample_interval_for_output: 4.0
-      detection_area_right_expand_dist: 3.0
-      detection_area_left_expand_dist: 3.0
+      detection_area_right_expand_dist: 0.0
+      detection_area_left_expand_dist: 1.0
 
       enable_avoidance_over_same_direction: true
       enable_avoidance_over_opposite_direction: true
 
-      threshold_distance_object_is_on_center: -3.0 # [m]  1.0 default
+      threshold_distance_object_is_on_center: -10.0 # [m]  1.0 default
       threshold_speed_object_is_stopped: 1.0      # [m/s]
       object_check_forward_distance: 150.0        # [m]
       object_check_backward_distance: 2.0         # [m]

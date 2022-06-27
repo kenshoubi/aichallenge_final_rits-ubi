@@ -1,16 +1,16 @@
 /**:
   ros__parameters:
     # motion state constraints
-    max_velocity: 2.35      # max velocity limit [m/s]
+    max_velocity: 2.11      # max velocity limit [m/s]
 
     # external velocity limit parameter
     margin_to_insert_external_velocity_limit: 0.3   #  margin distance to insert external velocity limit [m]
 
     # curve parameters
     max_lateral_accel: 0.8             # max lateral acceleration limit [m/ss]
-    min_curve_velocity: 2.74           # min velocity at lateral acceleration limit [m/ss]
-    decel_distance_before_curve: 3.5   # slow speed distance before a curve for lateral acceleration limit
-    decel_distance_after_curve: 2.0    # slow speed distance after a curve for lateral acceleration limit
+    min_curve_velocity: 1.0           # min velocity at lateral acceleration limit [m/ss]
+    decel_distance_before_curve: 6.0   # slow speed distance before a curve for lateral acceleration limit
+    decel_distance_after_curve: 4.0    # slow speed distance after a curve for lateral acceleration limit
 
     # engage & replan parameters
     replan_vel_deviation: 5.53         # velocity deviation to replan initial velocity [m/s]
@@ -19,9 +19,9 @@
     engage_exit_ratio: 0.5             # exit engage sequence to normal velocity planning when the velocity exceeds engage_exit_ratio x engage_velocity.
     stop_dist_to_prohibit_engage: 0.5  # if the stop point is in this distance, the speed is set to 0 not to move the vehicle [m]
 
-    # stop velocity
-    stopping_velocity: 1.38  # change target velocity to this value before v=0 point [m/s]
-    stopping_distance: 0.0    # distance for the stopping_velocity [m]. 0 means the stopping velocity is not applied.
+    # stop velocity change!!!!!! stop timing set
+    stopping_velocity: 0.1  # change target velocity to this value before v=0 point [m/s] change!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    stopping_distance: 0.0    # distance for the stopping_velocity [m]. 0 means the stopping velocity is not applied. change!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     # path extraction parameters
     extract_ahead_dist: 200.0         # forward trajectory distance used for planning [m]
@@ -47,4 +47,4 @@
     post_sparse_min_interval_distance: 1.0   # minimum points-interval length for sparse sampling [m]
 
     # system
-    over_stop_velocity_warn_thr: 1.389  # used to check if the optimization exceeds the input velocity on the stop point
+    over_stop_velocity_warn_thr: 1.0  # used to check if the optimization exceeds the input velocity on the stop point
